@@ -54,6 +54,11 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
     frameworks/base/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml
 
+# Changelog and Team information
+PRODUCT_COPY_FILES += \
+    vendor/cn/prebuilt/common/etc/CHANGELOG.html.gz:system/etc/CHANGELOG.html.gz \
+    vendor/cn/prebuilt/common/etc/CLASSIC.html.gz:system/etc/CLASSIC.html.gz
+
 # media config xml file
 PRODUCT_COPY_FILES += \
     device/htc/supersonic/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml
@@ -177,6 +182,6 @@ $(call inherit-product, device/htc/common/common.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-PRODUCT_NAME := htc_supersonic
+PRODUCT_NAME := classic_supersonic
 PRODUCT_DEVICE := supersonic
 PRODUCT_MODEL := Full Android on Supersonic
