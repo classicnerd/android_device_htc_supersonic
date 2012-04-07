@@ -16,7 +16,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_supersonic BUILD_FINGERPRINT=sp
 
 # Set up the product codename, build version & MOTD.
 PRODUCT_CODENAME := Butta
-PRODUCT_VERSION_DEVICE_SPECIFIC := a
+PRODUCT_VERSION_DEVICE_SPECIFIC := 1
 
 PRODUCT_MOTD :="Thank you for choosing classicnerd for you android experience.  You can follow us at www.classicnerd.net"
 
